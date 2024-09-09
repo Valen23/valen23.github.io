@@ -1,0 +1,453 @@
+/* --------------- BODY --------------- */
+
+body {
+    margin: 0%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Georgia';
+    overflow-x: hidden;
+}
+
+html {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1002%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(255%2c 192%2c 66%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c459.007C91.693%2c464.876%2c179.363%2c444.018%2c266.361%2c414.465C377.479%2c376.718%2c529.693%2c370.891%2c576.363%2c263.216C623.254%2c155.032%2c495.749%2c47.795%2c475.646%2c-68.388C456.394%2c-179.654%2c539.257%2c-318.002%2c461.61%2c-399.988C383.095%2c-482.891%2c238.874%2c-408.714%2c127.895%2c-435.571C24.813%2c-460.517%2c-56.377%2c-562.955%2c-161.741%2c-550.838C-270.458%2c-538.335%2c-364.34%2c-459.992%2c-428.793%2c-371.552C-490.721%2c-286.576%2c-500.024%2c-177.989%2c-509.762%2c-73.293C-519.071%2c26.784%2c-534.415%2c134.096%2c-483.91%2c220.994C-434.728%2c305.615%2c-333.138%2c338.515%2c-245.312%2c381.713C-166.79%2c420.334%2c-87.327%2c453.417%2c0%2c459.007' fill='%23ffab02'%3e%3c/path%3e%3cpath d='M1440 1265.746C1572.009 1253.234 1630.951 1092.6100000000001 1718.008 992.5899999999999 1781.128 920.071 1826.932 841.1990000000001 1879.556 760.739 1943.041 663.671 2054.485 586.869 2059.16 470.978 2063.95 352.222 1989.6219999999998 240.35000000000002 1903.867 158.05700000000002 1821.843 79.344 1707.278 52.543000000000006 1596.503 27 1491.395 2.76400000000001 1382.681-18.020999999999958 1279.72 14.138000000000034 1177.642 46.02099999999996 1092.768 118.05799999999999 1029.328 204.14999999999998 968.9390000000001 286.101 940.5699999999999 385.488 931.3720000000001 486.87 922.521 584.436 945.842 678.461 977.899 771.035 1012.9300000000001 872.198 1052.849 970.473 1125.9270000000001 1048.708 1214.589 1143.627 1310.693 1278.002 1440 1265.746' fill='%23ffd582'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1002'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    background-attachment: fixed;
+    background-size: cover;
+    scroll-behavior: smooth;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    row-gap: 5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* --------------- HEADER --------------- */
+
+@media(min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25%;
+        width: 100vw;
+        height: 10vh;
+        background-color: #333;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .logo {
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50px;
+        background-color: #B9B9B9;
+    }
+
+    .titulo {
+        flex-wrap: wrap;
+        text-align: center;
+        color: #B9B9B9;
+        font-size: 30px;
+    }
+
+    .botones_navegacion {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    #boton_menu, #boton_pedir {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: .5rem;
+        font-size: 16px;
+        background-color: #B9B9B9;
+        color: black;
+        border: none;
+        font-family: 'Georgia';
+        text-decoration: none;
+    }
+}
+
+/* --------------- SECCION PRINCIPAL --------------- */
+
+@media(min-width: 768px) {
+
+    #seccion_principal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        margin: 3rem 0 0 0;
+    }
+
+    .contenedor_principal {
+        background: rgba( 255, 196, 2, 0.4);
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 8px );
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        padding: 3%;
+        gap: 5%;
+    }
+
+    .imagen_principal {
+        width: 25rem;
+        border-radius: 10px;
+    }
+
+    .linea_divisora_vertical {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        width: 1px;
+        height: 12rem;
+    }
+
+    .texto_principal {
+        width: 25rem;
+        font-size: 20px;
+    }
+}
+
+@media(min-width: 768px) {
+    .contenedor_texto_principal {
+        background-color: #333333;
+        color: #fff;
+        padding: 1%;
+        border-radius: 10px;
+    }
+}
+
+.linea_divisora_horizontal {
+    height: 1px;
+    width: 80%;
+    background-color: black;
+    margin: 5rem;
+}
+
+@media(min-width: 768px) {
+    .contenedor_botones {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    .boton {
+        text-align: center;
+        padding: 1rem;
+        font-size: 20px;
+        font-family: 'Georgia';
+        text-decoration: none;
+        background-color: #333;
+        color: #FFC042;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 6px 6px 16px -8px rgba(0,0,0,0.6);
+        min-width: 110px;
+    }
+}
+
+/* ----- SECCION HAMBURGUESAS ----- */
+
+@media(min-width:768px) {
+    #seccion_hamburguesas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .titulo_producto {
+        background-color: #333;
+        text-align: center;
+        min-width: 150px;
+        color: #FFC042;
+        padding: 1rem;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .contenedor_producto_principal {
+        display: flex;
+        flex-direction: column;
+        background: rgba( 255, 196, 2, 0.4);
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 8px );
+        border-radius: 10px;
+        padding: 1%;
+        max-width: 90%;
+        gap: 1rem;
+    }
+
+    .fila_etiquetas {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .etiqueta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #333;
+        color: #fff;
+        padding: .5rem;
+        border-radius: 10px 10px 0 0;
+        min-width: 100px;
+    }
+
+    .fila {
+        display: block;
+    }
+
+    .fila_hamburguesas {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .producto_hamburguesa {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFAB02;
+        border-radius: 10px;
+        padding: 1%;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25)
+    }
+
+    .imagen_hamburguesa {
+        width: 25rem;
+        border-radius: 10px;
+    }
+
+    .descripcion_hamburguesas {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .etiquetas_movil {
+        display: none;
+    }
+}
+
+/* ----- SECCION ACOMPAÑANTES ----- */
+
+@media (min-width:768px) {
+    #seccion_acompañantes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contenedor_acompañantes_principal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .producto_acompañante {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 15rem;
+        background-color: #FFAB02;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25)
+    }
+
+    .imagen_acompañante {
+        display: flex;
+        max-height: 300px;
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .descripcion_acompañante {
+        background-color: #333;
+        border-radius: 0 0 10px 10px;
+        text-align: center;
+        padding: 1rem;
+        color: #FFF;
+    }
+
+    #etiqueta_acompañante_movil {
+        display: none;
+    }
+}
+
+/* ----- SECCION BEBIDAS */
+
+@media (min-width: 768px) {
+    #seccion_bebidas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedor_principal_bebidas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #333;
+        max-width: 90%;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25)
+    }
+
+    .segundo_contenedor_bebidas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+        background-color: #696969;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25)
+    }
+
+    .fila_bebidas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        border-radius: 5000px;
+    }
+
+    .contenedor_imagen_bebida {
+        display: flex;
+        justify-content: center;
+        width: 250px;
+        height: 250px;
+    }
+
+    .imagen_bebida {
+        width: 100%;
+        height: 100%;
+        object-fit: none;
+        border-radius: 5000px;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25)
+    }
+
+    .contenedor_producto_bebida_izq {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #333;
+        border-radius: 500px 20px 20px 500px;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25)
+    }
+
+    .contenedor_producto_bebida_der {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #333;
+        border-radius: 20px 500px 500px 20px;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25)
+    }
+
+    .descripcion_bebida {
+        color: #FFF;
+        padding: 1rem;
+    }
+
+    .contenedor_descripcion_precio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .etiqueta-precio {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        background-color: #B9B9B9;
+        padding: .5rem;
+        min-width: 70px;
+        border-radius: 5px;
+    }
+}
+
+@media (min-width: 768px) {
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .contenedor_imagen_footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        min-height: 600px;
+        background-image: url(fondo-footer.svg);
+        background-size: cover;
+        gap: 10rem;
+    }
+
+    .imagen_footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-height: 500px;
+    }
+
+    .contenedor_mapa {
+        display: flex;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+
+    .mapa {
+        border-radius: 10px;
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .contenedor_textos_footer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .contenedor_texto_footer {
+        display: flex;
+        color: #FFF;
+        background-color: #666;
+        padding: 1rem;
+        border-radius: 10px;
+        max-width: 600px;
+    }
+}
