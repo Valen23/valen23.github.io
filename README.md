@@ -1,1 +1,1 @@
-link: [valen23.github.io](url)
+[valen23.github.io](url)
